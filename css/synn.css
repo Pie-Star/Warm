@@ -1,0 +1,383 @@
+/* 全局样式 */
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	/* background: url(../images/bg.jpg) no-repeat; */
+}
+
+/* 头部导航样式 */
+header {
+	position: fixed;
+	z-index: 999;
+	top: 0px;
+	width: 100%;
+	height: 80px;
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+.logo {
+	width: 120px;
+	position: absolute;
+	left: 200px;
+}
+
+.header_nav {
+	position: absolute;
+	right: 50px;
+	/* width: 861px; */
+	width: 949px;
+	height: 80px;
+}
+
+.header_nav_list {
+	float: left;
+	width: 74.6%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.header_nav_list>li {
+	position: relative;
+	width: auto;
+	height: 55px;
+	text-align: center;
+	font-size: 18px;
+	padding: 25px 15px 0px 15px;
+}
+
+
+.header_nav_list>li>a {
+
+	color: grey;
+}
+
+.header_nav_list>li::after {
+	content: "";
+	display: none;
+	height: 20px;
+	width: 100px;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 0);
+	background: url(../images/header-hover.png) no-repeat center;
+	background-size: auto 20px;
+}
+
+.header_nav_list_menu {
+	display: none;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 0);
+	top: 80px;
+	padding: 10px;
+	width: 100px;
+	height: 96px;
+	background-image: linear-gradient(#e2b77d, #f5d6b0);
+}
+
+.header_nav_list_menu>a {
+	display: block;
+	width: 100px;
+	height: 24px;
+	color: #fff;
+	line-height: 24px;
+	font-size: 12px;
+
+}
+
+.header_nav_list_divider {
+	width: 80px;
+	height: 2.2px;
+	margin: 5px auto;
+	background-image: linear-gradient(to right,
+		rgba(255, 255, 255, 0),
+		#fff,
+		rgba(255, 255, 255, 0));
+}
+
+.header_nav_divider {
+	float: left;
+	margin: 33px 0px 33px 0px;
+	background-color: #c18c56;
+	width: 1px;
+	height: 14px;
+}
+
+.header_nav_link {
+	width: 150px;
+	height: 80px;
+	float: left;
+}
+
+
+.header_nav_link>li {
+	position: relative;
+	float: left;
+	width: 50px;
+	padding-top: 30px;
+	height: 50px;
+}
+
+.header_nav_link>li>a {
+	position: relative;
+	display: block;
+	padding: 0px 15px;
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	color: grey;
+	font-size: 22px;
+
+	line-height: 20px;
+}
+
+.header_nav_link>li>a>p {
+	display: none;
+	position: absolute;
+	font-size: 12px;
+	width: 50px;
+	left: 50%;
+	padding-top: 5px;
+	transform: translate(-50%, 0);
+}
+
+.header_nav_link>li>div {
+	display: none;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 0);
+	padding: 10px;
+	top: 80px;
+	width: 100px;
+	height: 118px;
+	background-image: linear-gradient(#e2b77d, #f5d6b0);
+}
+
+.header_nav_link>li>div>img {
+	width: 100px;
+}
+
+.header_nav_link>li>div>p {
+	font-size: 12px;
+	color: #fff;
+	line-height: 12px;
+	text-align: center;
+}
+
+.header_nav_share {
+	position: relative;
+	float: right;
+	width: 76px;
+	height: 80px;
+	font-size: 18px;
+}
+
+.header_nav_share>a {
+	display: block;
+
+	color: grey;
+	font-size: 18px;
+	margin-top: 25px;
+}
+
+.header_nav_share>a>span {
+	position: relative;
+	top: 3px;
+	left: 4px;
+	font-size: 25px;
+}
+
+.header_nav_share_list {
+	display: none;
+	position: absolute;
+	left: 50%;
+	top: 80px;
+	transform: translate(-50%, 0);
+	padding: 10px;
+	width: 100px;
+	color: #fff;
+	height: 218px;
+	background-image: linear-gradient(#e2b77d, #f5d6b0);
+}
+
+.header_nav_share_list>a {
+	display: block;
+	width: 100px;
+	height: 24px;
+	font-size: 18px;
+	color: #fff;
+	text-align: center;
+}
+
+.header_nav_share_list>img {
+	width: 100px;
+	height: 100px;
+}
+
+.header_nav_share_list>p {
+	font-size: 12px;
+	text-align: center;
+}
+
+.header_nav_list>li:hover>a,
+.header_nav_list_menu>a:hover,
+.header_nav_link>li:hover>a,
+.header_nav_share:hover>a,
+.header_nav_share_list>a:hover {
+	color: #c18c56;
+}
+
+.header_nav_list>li:hover::after,
+.header_nav_list>li:hover>.header_nav_list_menu,
+.header_nav_link>li>a:hover>p,
+.header_nav_link>li>a>p:hover,
+.header_nav_link>li:hover>div,
+.header_nav_share:hover>.header_nav_share_list {
+	display: block;
+}
+
+
+
+.top_bg {
+	position: absolute;
+	z-index: 2;
+	width: 100%;
+	height: calc(100vw / 16 * 8 - 0px);
+	min-height: calc(1400px / 16 * 8 - 0px);
+}
+
+.play_video {
+	cursor: pointer;
+	position: absolute;
+	z-index: 4;
+	width: 306px;
+	height: 155px;
+	background: url(../images/play-b.png) no-repeat center;
+	background-size: contain;
+	top: 200px;
+	/* left: 11.8%; */
+	left: calc(50% - 580px);
+}
+
+.play_v {
+	width: 288px;
+	height: 138px;
+	border-radius: 72px;
+	position: absolute;
+	top: 8px;
+	left: 8px;
+	overflow: hidden;
+}
+
+.play_b {
+	position: absolute;
+	top: 7px;
+	left: 7px;
+	width: 292px;
+	height: 142px;
+	background: url(../images/play-bg.png) no-repeat;
+	background-size: contain;
+}
+
+.play_v>video {
+	width: 101%;
+	position: absolute;
+	left: -1px;
+	top: 0px;
+	object-fit: contain;
+}
+
+.diamond {
+	position: absolute;
+	width: 268px;
+	height: 268px;
+	background-image: url(../images/diamonds.png);
+	background-size: cover;
+	animation: animation1 3s linear infinite;
+}
+
+.diamond.left {
+	top: 75%;
+	left: -6%;
+	background-position: 18px 0px;
+}
+
+.diamond.right {
+	top: 10%;
+	right: 0px;
+	background-position: -275px 0px;
+}
+
+@keyframes animation1 {
+	0% {
+		transform: translateY(5px);
+	}
+
+	50% {
+		transform: translateY(-5px);
+	}
+
+	100% {
+		transform: translateY(5px);
+	}
+}
+
+.necklace {
+	position: absolute;
+	width: 80vw;
+	top: -20vh;
+	/* left: 50%;
+	transform: translateX(-50%); */
+	left: calc(50% - 40vw);
+	background-size: contain;
+}
+
+.necklace.left {
+	height: 1380px;
+	background-image: url(../images/ccc.png);
+	animation: animation1 2s 0s linear infinite;
+}
+
+.necklace.right {
+	height: 1491px;
+	background-image: url(../images/ddd.png);
+	animation: animation1 2s 1s linear infinite;
+}
+
+#canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 90%;
+	z-index: 3;
+}
+
+.main {
+	position: relative;
+	z-index: 1;
+	width: 100%;
+	height: 3000px;
+	background: url(../images/all-bg.jpg) repeat;
+	background-size: 100%;
+}
+
+.main_bg {
+	width: 100%;
+	height: calc(100vw / 1924 * 1445 - 0px);
+	background: url(../images/bg.jpg) no-repeat;
+	background-size: cover;
+	min-width: 1300px;
+	min-height: calc(1300px / 1924 * 1445 - 0px);
+}

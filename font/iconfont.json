@@ -1,0 +1,44 @@
+{
+  "id": "2206571",
+  "name": "闪耀暖暖",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "386488",
+      "name": "微博",
+      "font_class": "weibo",
+      "unicode": "e635",
+      "unicode_decimal": 58933
+    },
+    {
+      "icon_id": "970752",
+      "name": "微信",
+      "font_class": "weixin",
+      "unicode": "e62e",
+      "unicode_decimal": 58926
+    },
+    {
+      "icon_id": "4685763",
+      "name": "分享",
+      "font_class": "Group-",
+      "unicode": "e6a5",
+      "unicode_decimal": 59045
+    },
+    {
+      "icon_id": "5699516",
+      "name": "QQ",
+      "font_class": "QQ",
+      "unicode": "e62f",
+      "unicode_decimal": 58927
+    },
+    {
+      "icon_id": "15307312",
+      "name": "百度",
+      "font_class": "baidu",
+      "unicode": "e63f",
+      "unicode_decimal": 58943
+    }
+  ]
+}
